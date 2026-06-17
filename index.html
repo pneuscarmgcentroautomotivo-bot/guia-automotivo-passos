@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pneuscarmg Centro Automotivo em Passos-MG | Pneus, Câmbio Automático e Oficina</title>
+<meta name="description" content="Há 29 anos em Passos-MG e região. Revenda oficial Continental. Pneus, câmbio automático (CVT/DSG/PowerShift), oficina mecânica, alinhamento e suspensão. 4,7★ no Google, +30.000 clientes." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://pneuscarmgcentroautomotivo-bot.github.io/guia-automotivo-passos/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Pneuscarmg Centro Automotivo em Passos-MG" />
+<meta property="og:description" content="Revenda oficial Continental. Pneus, câmbio automático e oficina mecânica completa em Passos-MG. 29 anos, 4,7★, +30.000 clientes." />
+<meta property="og:image" content="img/fachada.jpg" />
+<meta property="og:locale" content="pt_BR" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --laranja:#FFA500; --laranja-escuro:#e08e00;
+    --preto:#0a0a0a; --branco:#ffffff;
+    --cinza-claro:#f4f4f4; --cinza:#f0f0f0; --cinza-texto:#5b5b5b; --borda:#e6e6e6;
+    --raio:2px; --max:1180px;
+    --sombra:0 1px 2px rgba(0,0,0,.06); --sombra-hover:0 8px 24px rgba(0,0,0,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Poppins',system-ui,Arial,sans-serif;color:var(--preto);background:var(--branco);line-height:1.6;font-weight:300}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-weight:700;line-height:1.15}
+  .kw{color:var(--laranja)}
+  .btn{display:inline-block;background:var(--laranja);color:var(--preto);font-weight:600;padding:14px 26px;border-radius:var(--raio);transition:.2s;border:2px solid var(--laranja)}
+  .btn:hover{background:transparent;color:var(--preto)}
+  .btn-ghost{display:inline-block;background:transparent;border:2px solid var(--preto);color:var(--preto);font-weight:600;padding:12px 24px;border-radius:var(--raio);transition:.2s}
+  .btn-ghost:hover{border-color:var(--laranja);color:var(--laranja)}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--borda);backdrop-filter:saturate(120%)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-weight:800;font-size:1.25rem;letter-spacing:-.5px}
+  .logo b{color:var(--laranja)}
+  .nav a.btn{padding:10px 18px;font-size:.9rem}
+
+  /* Hero */
+  .hero{position:relative;color:var(--branco);min-height:62vh;display:flex;align-items:center;
+    background:linear-gradient(rgba(8,8,8,.62),rgba(8,8,8,.62)),url('img/fachada.jpg') center/cover no-repeat}
+  .hero .wrap{padding-top:54px;padding-bottom:54px}
+  .selo{display:inline-block;background:var(--laranja);color:var(--preto);font-weight:600;font-size:.8rem;padding:6px 12px;border-radius:var(--raio);margin-bottom:18px;text-transform:uppercase;letter-spacing:.5px}
+  .hero h1{font-size:clamp(1.9rem,5vw,3.2rem);font-weight:800;max-width:18ch}
+  .hero p{font-weight:300;font-size:clamp(1rem,2.4vw,1.25rem);margin:18px 0 26px;max-width:54ch;opacity:.95}
+  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* Stats */
+  .stats{background:var(--preto);color:var(--branco)}
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:10px;padding:28px 0}
+  .stats .n{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;color:var(--laranja);line-height:1}
+  .stats .l{font-size:.82rem;opacity:.85;margin-top:6px}
+
+  /* Sections */
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:62ch;margin:0 auto 40px}
+  .sec-head span{color:var(--laranja);font-weight:600;text-transform:uppercase;letter-spacing:1px;font-size:.82rem}
+  .sec-head h2{font-size:clamp(1.6rem,4vw,2.3rem);margin:8px 0}
+  .sec-head p{color:var(--cinza-texto)}
+
+  .servico{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;margin-bottom:60px}
+  .servico:last-child{margin-bottom:0}
+  .servico.alt .txt{order:2}
+  .servico .foto{border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra);aspect-ratio:4/3}
+  .servico .foto img{width:100%;height:100%;object-fit:cover;transition:.4s}
+  .servico .foto:hover img{transform:scale(1.04)}
+  .servico h3{font-size:1.55rem;margin-bottom:8px}
+  .servico ul{list-style:none;margin:16px 0 22px}
+  .servico li{padding:6px 0 6px 28px;position:relative;color:#333}
+  .servico li::before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;background:var(--laranja);border-radius:var(--raio)}
+
+  /* Faixa CTA */
+  .faixa{background:var(--laranja);color:var(--preto);text-align:center}
+  .faixa h2{font-size:clamp(1.5rem,4vw,2.1rem)}
+  .faixa p{margin:10px 0 22px;font-weight:400}
+  .faixa .btn-ghost{border-color:var(--preto)}
+  .faixa .btn-ghost:hover{background:var(--preto);color:var(--branco);border-color:var(--preto)}
+
+  /* Footer */
+  footer{background:var(--cinza);color:#222;font-size:.92rem;border-top:1px solid var(--borda)}
+  footer .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;padding:46px 0}
+  footer h4{font-size:1rem;margin-bottom:12px}
+  footer p{color:var(--cinza-texto);margin-bottom:6px}
+  .copy{border-top:1px solid var(--borda);text-align:center;padding:16px;color:var(--cinza-texto);font-size:.82rem}
+
+  @media(max-width:820px){
+    .servico,.servico.alt{grid-template-columns:1fr;gap:20px}
+    .servico.alt .txt{order:0}
+    .stats .grid{grid-template-columns:repeat(2,1fr);gap:22px}
+    footer .grid{grid-template-columns:1fr}
+    section{padding:46px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">PNEUS<b>CAR</b>MG</div>
+    <a class="btn" href="https://wa.me/553535218699" target="_blank" rel="noopener">WhatsApp (35) 3521-8699</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="selo">Revenda Oficial Continental</span>
+    <h1>Centro automotivo em Passos-MG que cuida do seu carro <span class="kw">de ponta a ponta</span></h1>
+    <p>Há 29 anos na estrada do Sul de Minas: pneus, câmbio automático e oficina mecânica completa, com a confiança de quem já atendeu mais de 30.000 clientes e mantém nota 4,7★ no Google.</p>
+    <div class="cta-row">
+      <a class="btn" href="https://wa.me/553535218699" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      <a class="btn-ghost" href="#servicos" style="color:#fff;border-color:#fff">Ver serviços</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div><div class="n">29</div><div class="l">anos de estrada</div></div>
+      <div><div class="n">4,7★</div><div class="l">518 avaliações no Google</div></div>
+      <div><div class="n">+30 mil</div><div class="l">clientes atendidos</div></div>
+      <div><div class="n">+1.000</div><div class="l">trocas de câmbio automático</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVIÇOS / ARTIGOS -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span>O que resolvemos</span>
+      <h2>Três frentes, <span class="kw">um só lugar de confiança</span></h2>
+      <p>Pneu, câmbio e mecânica conversam entre si. Resolver tudo no mesmo centro automotivo evita diagnóstico solto e protege o seu bolso.</p>
+    </div>
+
+    <!-- PNEUS -->
+    <article class="servico">
+      <div class="foto"><img src="img/pneus.jpg" alt="Picape sobre o alinhador na Pneuscarmg, revenda oficial Continental e General Tire em Passos-MG" /></div>
+      <div class="txt">
+        <h3>Pneus: <span class="kw">Continental, General Tire e Barum</span></h3>
+        <p>O pneu é o único contato do carro com o chão. Como revenda oficial Continental, entregamos a medida certa para o seu uso e a freada previsível que só marca de verdade oferece.</p>
+        <ul>
+          <li>Venda e montagem com alinhamento e balanceamento</li>
+          <li>Orientação da medida correta (manual/etiqueta da montadora)</li>
+          <li>Rodízio e calibragem para o pneu durar muito mais</li>
+        </ul>
+        <a class="btn" href="https://www.pneuscarmg.com.br/produtos?utm_source=guia-automotivo&utm_medium=referral&utm_campaign=backlinks-jun2026">Ver opções de pneus</a>
+      </div>
+    </article>
+
+    <!-- CÂMBIO -->
+    <article class="servico alt">
+      <div class="foto"><img src="img/cambio.jpg" alt="Troca de fluido de câmbio automático com equipamento computadorizado na Pneuscarmg em Passos-MG" /></div>
+      <div class="txt">
+        <h3>Câmbio automático: <span class="kw">CVT, DSG e PowerShift</span></h3>
+        <p>O mito do "fluido para a vida toda" é a falha mais cara do mundo automotivo. Fazemos a troca completa com equipamento computadorizado e fluido na especificação da montadora — mais de 1.000 trocas realizadas.</p>
+        <ul>
+          <li>Diagnóstico de trancos, atraso de engate e superaquecimento</li>
+          <li>Fluido ATF correto para cada tipo de câmbio</li>
+          <li>Nota fiscal e garantia no serviço</li>
+        </ul>
+        <a class="btn" href="https://www.pneuscarmg.com.br/cambio/automatico?utm_source=guia-automotivo&utm_medium=referral&utm_campaign=backlinks-jun2026">Conhecer o serviço de câmbio</a>
+      </div>
+    </article>
+
+    <!-- OFICINA -->
+    <article class="servico">
+      <div class="foto"><img src="img/oficina.jpg" alt="Fachada e oficina mecânica completa da Pneuscarmg em Passos-MG" /></div>
+      <div class="txt">
+        <h3>Oficina mecânica <span class="kw">completa</span></h3>
+        <p>Manutenção preventiva por quilometragem que evita as panes mais caras. Técnicos formados pela APTTA Brasil cuidam do seu carro com a visão de conjunto que a oficina solta não tem.</p>
+        <ul>
+          <li>Suspensão, freios, amortecedores e troca de óleo</li>
+          <li>Injeção eletrônica e revisão por quilometragem</li>
+          <li>Alinhamento e balanceamento computadorizados</li>
+        </ul>
+        <a class="btn" href="https://www.pneuscarmg.com.br/oficina-mecanica-passos-mg?utm_source=guia-automotivo&utm_medium=referral&utm_campaign=backlinks-jun2026">Ver a oficina mecânica</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- FAIXA CTA -->
+<section class="faixa">
+  <div class="wrap">
+    <h2>Seu carro deu sinal? Não deixe para depois.</h2>
+    <p>Diagnóstico cedo é barato. Ignorar é que sai caro. Fale agora com quem é referência em Passos-MG há 29 anos.</p>
+    <a class="btn-ghost" href="https://wa.me/553535218699" target="_blank" rel="noopener">Chamar no WhatsApp (35) 3521-8699</a>
+  </div>
+</section>
+
+<!-- FOOTER / NAP -->
+<footer>
+  <div class="wrap grid">
+    <div>
+      <h4>Pneuscarmg Centro Automotivo</h4>
+      <p>Revenda oficial Continental · 29 anos em Passos-MG e região.</p>
+      <p>Nota 4,7★ (518 avaliações) · +30.000 clientes.</p>
+      <p>Técnicos formados pela APTTA Brasil.</p>
+    </div>
+    <div>
+      <h4>Unidades</h4>
+      <p>Loja 1 (Matriz): Av. Com. Francisco Avelino Maia, 1451 — Canjeranus, Passos-MG</p>
+      <p>Loja 2: Av. Juca Stockler, 1365 — Belo Horizonte, Passos-MG</p>
+      <p>Loja 3: Rua João Pessoa, 06 — Centro, São João Batista do Glória-MG</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>WhatsApp: (35) 3521-8699</p>
+      <p>Site: <a class="kw" href="https://www.pneuscarmg.com.br/?utm_source=guia-automotivo&utm_medium=referral&utm_campaign=backlinks-jun2026">pneuscarmg.com.br</a></p>
+      <p>Seg a Sex 08h–18h · Sáb 08h–13h</p>
+    </div>
+  </div>
+  <div class="copy">© 2026 Pneuscarmg Centro Automotivo — Passos-MG / São João Batista do Glória-MG.</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AutoRepair",
+  "name":"Pneuscarmg Centro Automotivo",
+  "image":"https://www.pneuscarmg.com.br/og.jpg",
+  "url":"https://www.pneuscarmg.com.br",
+  "telephone":"+553535218699",
+  "priceRange":"$$",
+  "address":{"@type":"PostalAddress","streetAddress":"Av. Com. Francisco Avelino Maia, 1451 - Canjeranus","addressLocality":"Passos","addressRegion":"MG","postalCode":"37900-531","addressCountry":"BR"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"518"},
+  "areaServed":["Passos-MG","São João Batista do Glória-MG","Sul de Minas"],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pneus (Continental, General Tire, Barum)"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Troca de óleo de câmbio automático (CVT, DSG, PowerShift)"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Oficina mecânica completa"}}
+  ]
+}
+</script>
+</body>
+</html>
